@@ -1,0 +1,245 @@
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.page {
+    min-height: 100vh;
+}
+.dashboard{
+    flex:1;
+    
+}
+.dashboard:not(:first-child){
+    background-color: #f1f5f9;
+}
+/* start toggle */
+
+ .toggle-checkbox{
+ -webkit-appearance:none;
+ appearance: none;
+ display: none;
+
+}
+ .toggle-switch{
+    width: 70px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+}
+ .toggle-switch::before{
+    font-family: var(--fa-style-family-classic);
+    content: "";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 3px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.toggle-switch::after{
+    content: "OFF";
+    position: absolute;
+    top: 5px;
+    color: white;
+    left: 31px;
+}
+ .toggle-checkbox:checked + .toggle-switch{
+    background-color: #4c8cd4;
+}
+.toggle-checkbox:checked + .toggle-switch::before{
+    color: #4c8cd4;
+    left: 42px;
+    
+}
+.toggle-checkbox:checked + .toggle-switch::after{
+    content: "ON";
+    left: 10px;
+}
+/* end toggle */
+/* start site control */
+.site .text h4{
+    font-size: 16px;
+    font-weight: 500;
+}
+.site textarea{
+    width: 473px;
+    height: 185px;
+    resize: none;
+}
+.site textarea::placeholder{
+    padding: 15px;
+    font-size: 12px;
+}
+/* end site control */
+/* start general info */
+.general form p {
+    padding-bottom: 10px;
+    color: #777;
+    font-size: 13px;
+}
+
+.general form input[type=text] {
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #777;
+}
+.general form input::placeholder{
+    font-size: 13px;
+    color: #777;
+}
+.general form .input {
+    column-gap: 25px;
+}
+.general form input[type=email] {
+  
+    width: 100%;
+    border-radius: 4px;
+    padding: 6px;
+    outline: none;
+    border: 1px solid #777;
+    background-color: #f5f1f1;
+}
+.general form input[type=submit] {
+    border: none;
+    background-color: white;
+    color: #0075ff;
+    font-size: 17px;
+    font-weight: normal;
+    cursor: pointer;
+}
+/* end general info */
+/* start widgets */
+.widgets .check-box input{
+    -webkit-appearance:none;
+    appearance: none;
+}
+.widgets .check-box label{
+ position: relative;
+ padding-left: 30px;
+ cursor: pointer;
+}
+.widgets .check-box label::after{
+    content: "\f00c";
+    font-family: var(--fa-style-family-classic);
+    font-weight: 900;
+    position: absolute;
+    background-color: #0075ff;
+    color: white;
+    left: 1px;
+    top: 3px;
+    width: 14px;
+    height: 14px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    transform: scale(0) rotate(360deg);
+    transition: .3s;
+}
+.widgets .check-box label::before{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #ccc;
+    left: 0px;
+    top: 2px;
+    border-radius: 3px;
+}
+.widgets .check-box label:hover::before{
+    border-color: #0075ff;
+}
+.widgets .check-box input[type=checkbox]:checked + label::after{
+    transform: scale(1) rotate(0);
+    transition: .3s;
+}
+/* end widgets */
+/* start backup */
+.backup .check-option {
+ border-bottom: 1px solid #ccc;
+}
+.backup .check-option .check-box{
+    
+    transition: .3s;
+   
+}
+.backup .check-option .check-box label{
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.backup .check-option .check-box input[type=radio]{
+    -webkit-appearance:none;
+    appearance: none;
+}
+.backup .check-option .check-box label::before{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: .3s;
+    left: 0;
+}
+.backup .check-option .check-box label::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #0075ff;
+    border-radius: 50%;
+    left: 3px;
+    top: 5px;
+    transition: .3s;
+    transform: scale(0);
+}
+.backup .check-option .check-box input[type=radio]:checked + label::before{
+    border: 1px solid #0075ff;
+}
+.backup .check-option .check-box input[type=radio]:checked + label::after{
+    transform: scale(1);
+}
+.backup .names{
+    padding-top: 20px;
+}
+.backup .names input[type=radio]{
+    -webkit-appearance:none;
+    appearance: none;
+}
+.backup .names label{
+    padding: 23px;
+    flex-basis: 32%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.backup .names input[type=radio]:checked + label{
+    border: 1px solid #0075ff;
+    color: #0075ff;
+}
+/* end backup */

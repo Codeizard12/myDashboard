@@ -1,0 +1,134 @@
+/* start profile-info */
+.profile .profile-info{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+}
+.profile .profile-info .image{
+    text-align: center;
+    border-right: 1px solid #ccc;
+    padding: 50px;
+}
+.profile .profile-info .image img{
+    width: 115px;
+}
+.profile .profile-info .image h3{
+    
+}
+.profile .profile-info .image .rating{
+    position: relative;
+    padding: 5px;
+}
+.profile .profile-info .image .rating::before{
+    content: "";
+    position: absolute;
+    width: 75%;
+    z-index: 2;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #0075ff;
+    bottom: -5px;
+    left: 0;
+}
+.profile .profile-info .image .rating::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: #e7e7e7;
+    bottom: -5px;
+    left: 40%;
+}
+.profile .profile-info .image .stars{
+    padding-top: 10px;
+}
+.profile .profile-info .image p{
+    
+}
+.profile-info .info{
+    padding: 40px;
+}
+
+.profile-info .info .box{
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-items: end;
+    border-bottom: 1px solid #eee;
+}
+.profile-info .info .box p{
+    padding-bottom: 10px;
+}
+.profile-info .info .box span{
+    font-size: 13px;
+}
+.profile-info .info .box .name-info{
+    min-width: 200px;
+}
+@media(max-width:1448px){
+    .profile .profile-info .image{
+        border-right: none;
+    }
+}
+/* end profile-info */
+/* start myskills & acctivities */
+.profile .activities {
+    width: 98%;
+    margin: auto;
+    padding-top: 25px;
+    flex-wrap: wrap;
+}
+
+@media(max-width:1200px){
+    .profile .activities{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .profile .activities .myskills{
+        flex-basis: 100%;
+    }
+    .profile .activities .latest-acc{
+        flex-basis: 100%;
+    }
+}
+
+/* <!-- start myskills & acctivities --> */
+.profile .activities .myskills {
+    flex-basis: 28.5%;
+    height: 500px;
+}
+.profile .activities .myskills .line:last-child {
+    border-bottom: none;
+}
+.profile .activities .myskills .line span {
+    
+}
+/* <!-- start myskills & acctivities --> */
+
+
+/* start activities */
+.profile .activities .latest-acc{
+    flex-basis: 68.5%;
+    height: 500px;
+}
+.profile .activities .latest-acc .line-box{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 20px 0;
+}
+.profile .activities .latest-acc .line-box:last-child{
+    border: none;
+}
+.profile .activities .latest-acc .line-box .imag{
+    gap: 10px;
+    align-items: center;
+}
+.profile .activities .latest-acc .line-box .imag img{
+    width: 50px;
+}
+.profile .activities .latest-acc .line-box .imag .text{
+    
+}
+/* end activities */
+
+
+/* end myskills & acctivities */

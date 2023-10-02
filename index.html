@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,200;0,500;0,800;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page d-flex">
+        
+        <div class="list">
+            <h1>Your Site</h1>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-bars"></i>
+                    
+                    <a href="index.html">dashboard</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    
+                    <a href="settings.html">Settings</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                    
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-address-book"></i>
+                    
+                    <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-face-smile"></i>
+                    
+                    <a href="friends.html">Friends</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file"></i>
+                    
+                    <a href="files.html">Files</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paste"></i>
+                    
+                    <a href="plans.html">Plans</a>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="dashboard ">
+            <!-- start header -->
+            <div class="header d-flex between-flex">
+                <div class="input">
+                    <input type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="info">
+                    <i class="fa-regular fa-bell"></i>
+                    <img src="img/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- end header -->
+            <!-- start title -->
+            <div class="title">
+                <h1>Dashboard</h1>
+            </div>   
+            <!-- end title -->
+            <!-- start content -->
+            <div class="content p-15 grid ">
+                <!-- start welcome -->
+                <div class="welcome  bg-white radious flow">
+                    <div class="first d-flex between-flex grey">
+                        <h2>welcome <br> <span class="c-grey">Your Site</span></h2>
+                        <img class="w-image" src="img/welcome.png" alt="">
+                    </div>
+                    <div class="imag">
+                        <img src="img/avatar.png" alt="">
+                    </div>
+                    <div class="second bg-white">
+                        <div class="text d-flex between-flex">
+                            <p>Mohamed <br> <span class="c-grey">Developer</span></p>
+                            <p>80<br> <span class="c-grey">Projects</span></p>
+                            <p>$8500 <br> <span class="c-grey">Earned</span></p>
+                        </div>
+                        <div class="btn">
+                            <a href="" class="btn-style">Profile</a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <!-- end welcome -->
+                <!-- start Quick draft -->
+                <div class="quickDraft p-25 bg-white radious flow">
+                    <h2>Quick Draft</h2>
+                    <p class="c-grey">Write A Draft For Your Ideas</p>
+                    <form action="">
+                        <input type="text" class="grey " placeholder="Title">
+                        <textarea class="grey " name="" id="" placeholder="Your Thought"></textarea>
+                    </form>
+                    <div class="btn">
+                        <a href="" class="btn-style">Save</a>
+                    </div>
+                </div>
+                <!-- end Quick draft -->
+            
+                <!-- start targets -->
+                <div class="target p-25 bg-white radious flow">
+                    <h2>Yearly Targest</h2>
+                    <p class="c-grey p-decoration">Targets Of The Year</p>
+                    <div class="stats">
+                        <div class="box d-flex between-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-dollar-sign dollar"></i>
+                            </div>
+                            <div class="text">
+                                <p>Money</p>
+                                <p >$20.000</p>
+                                <div class="line dlr">  
+                                    <span  style="width: 80%" data-progress="80%" colorr="red"></span>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="box d-flex between-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-code code"></i>
+                            </div>
+                            <div class="text">
+                                <p>Projects</p>
+                                <p >24</p>
+                                <div class="line cde">
+                                    <span style="width: 55%" data-progress="55%"></span>
+                                </div>
+                                
+                            </div>
+                        </div>    
+                        <div class="box d-flex between-flex">
+                            <div class="logo">
+                                <i class="fa-solid fa-user user"></i>
+                            </div>
+                            <div class="text">
+                                <p>Team</p>
+                                <p>12</p>
+                                <div class="line usr">
+                                    <span style="width: 75%" data-progress="75%"></span>
+                                </div>
+                                
+                             </div>
+                        </div>
+                    </div>
+                </div>    
+                <!-- end targets -->
+                <!-- start tickets -->
+                <div class="tickets p-25 bg-white radious flow">
+                    <h2>Tickets Statistics</h2>
+                    <p class="c-grey p-decoration">Everything About Support Tickets</p>
+                    <div class="ticket s-grid">
+                        <div class="box">
+                            <i class="fa-regular fa-rectangle-list" style="color: #f6a00b;"></i>
+                            <p class="bold">2500</p>
+                            <p>Total</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-spinner" style="color: #0075ff;"></i>
+                            <p class="bold">500</p>
+                            <p>Pending</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-circle-xmark" style="color: #22c55e;"></i>
+                            <p class="bold">1900</p>
+                            <p>Closed</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-square-xmark" style="color: #f64336;"></i>
+                            <p class="bold">100</p>
+                            <p>Deletes</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tickets -->
+                <!-- start news -->
+                <div class="news p-25 bg-white radious flow">
+                    <h2>Latest News</h2>
+                    <div class="box d-flex between-flex">
+                        <div class="box1 d-flex between-flex">
+                            <div class="img">
+                                <img class="img-decorarion" src="img/news-01.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>Created SASS Section</h4>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                        </div>
+                        <p>3 Days Ago</p>
+                    </div>
+                    <div class="box d-flex between-flex">
+                        <div class="box1 d-flex between-flex">
+                            <div class="img">
+                                <img class="img-decorarion" src="img/news-02.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>Created SASS Section</h4>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                        </div>
+                        <p>3 Days Ago</p>
+                    </div>
+                    <div class="box d-flex between-flex">
+                        <div class="box1 d-flex between-flex">
+                            <div class="img">
+                                <img class="img-decorarion" src="img/news-03.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>Created SASS Section</h4>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                        </div>
+                        <p>3 Days Ago</p>
+                    </div>
+                    <div class="box d-flex between-flex" style="padding-bottom: 0;">
+                        <div class="box1 d-flex between-flex">
+                            <div class="img">
+                                <img class="img-decorarion" src="img/news-04.png" alt="">
+                            </div>
+                            <div class="text">
+                                <h4>Created SASS Section</h4>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                        </div>
+                        <p>3 Days Ago</p>
+                    </div>
+                </div>
+                <!-- end news -->
+                <!-- start tasks -->
+                <div class="tasks p-25 bg-white radious flow">
+                    <h2>Latest Tasks</h2>
+                    <div class="box d-flex between-flex">
+                        <div class="box1 ">
+                            <h4>Record One New Video</h4>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                    <div class="box d-flex between-flex">
+                        <div class="box1">
+                            <h4>Record One New Video</h4>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                    <div class="box d-flex between-flex">
+                        <div class="box1">
+                            <h4>Record One New Video</h4>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                    <div class="box d-flex between-flex">
+                        <div class="box1">
+                            <h4 class="deleted">Record One New Video</h4>
+                            <p class="deleted">Record Python Create Exe Project</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-trash-can c-e7e7e7"></i>
+                        </div>
+                    </div>
+                    <div class="box d-flex between-flex">
+                        <div class="box1">
+                            <h4>Record One New Video</h4>
+                            <p>Record Python Create Exe Project</p>
+                        </div>
+                        <div class="icon ">
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- end tasks -->
+                <!-- start last project -->
+                <div class="proj p-25 bg-white radious flow">
+                    <h2>Last Project Progress</h2>
+                    <ul>
+                        <li> Got The Project</li>
+                        <li>Started The Project</li>
+                        <li>The Project about To Finish</li>
+                        <li>Test The Project</li>
+                        <li>Finish The Project & Get Money</li>
+                    </ul>
+                </div>
+                <!-- end last project -->
+            </div>
+            <!-- start table -->
+            <div class="table p-25 bg-white radious flow">
+                <h2 class="p-b-20">Projects</h2>
+                <div class="responsive-table">
+                    <table>
+                        <thead>
+                            <td>Name</td>
+                            <td>Finish Date</td>
+                            <td>Client</td>
+                            <td>Price</td>
+                            <td>Team</td>
+                            <td>Status</td>
+                        </thead>
+                        <tbody>
+                            <td>Ministry Wikipedia</td>
+                            <td>10 May 2022</td>
+                            <td>Ministry</td>
+                            <td>$5300</td>
+                            <td>
+                                <img src="img/team-01.png" alt="">
+                                <img src="img/team-02.png" alt="">
+                                <img src="img/team-03.png" alt="">
+                                <img src="img/team-04.png" alt="">
+                            </td>
+                            <td> <span class="status-decoration bg-orange">Pending</span></td>
+                        </tbody>
+                        <tbody>
+                            <td>Your Site Shop</td>
+                            <td>12 Oct 2021</td>
+                            <td>Your Site Company</td>
+                            <td>$1500</td>
+                            <td>
+                                <img src="img/team-01.png" alt="">
+                                <img src="img/team-02.png" alt="">
+                                <img src="img/team-03.png" alt="">
+                                
+                            </td>
+                            <td> <span class="status-decoration blue">in progress</span> </td>
+                        </tbody>
+                        <tbody>
+                            <td>Bouba App</td>
+                            <td>05 Sep 2021</td>
+                            <td>Bouba</td>
+                            <td>$800</td>
+                            <td>
+                                <img src="img/team-01.png" alt="">
+                                <img src="img/team-02.png" alt="">
+                                
+                                
+                            </td>
+                            <td> <span class="status-decoration bg-green">completed</span> </td>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            <!-- end table -->
+            <!-- end content -->  
+         </div>
+    </div>     
+    <script src="js/all.min.js"></script>
+</body>
+</html>

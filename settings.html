@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans:ital,wght@0,200;0,500;0,800;1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/template.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page d-flex">
+        
+        <div class="list">
+            <h1>Your Site</h1>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-bars"></i>
+                    
+                    <a href="index.html">dashboard</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    
+                    <a href="settings.html">Settings</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                    
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-address-book"></i>
+                    
+                    <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                    <i class="fa-regular fa-face-smile"></i>
+                    
+                    <a href="friends.html">Friends</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-file"></i>
+                    
+                    <a href="files.html">Files</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-paste"></i>
+                    
+                    <a href="plans.html">Plans</a>
+                </li>
+               
+            </ul>
+        </div>
+        <div class="dashboard ">
+            <!-- start header -->
+            <div class="header d-flex between-flex">
+                <div class="input">
+                    <input type="search" placeholder="Type A Keyword">
+                </div>
+                <div class="info">
+                    <i class="fa-regular fa-bell"></i>
+                    <img src="img/avatar.png" alt="">
+                </div>
+            </div>
+            <!-- end header -->
+            <!-- start title -->
+            <div class="title">
+                <h1>Settings</h1>
+            </div>   
+            <!-- end title -->
+            <!-- start settings -->
+            <div class="content p-15 grid ">
+                <!-- start site control -->
+                <div class="site bg-white radious flow p-15 ">
+                    <h2 class="sub-heading-dec">Site Control</h2>
+                    <p class="sub-heading-txt-dec">Control The Website If There Is Maintenance</p>
+                    <div class="middle d-flex between-flex p-b-15">
+                        <div class="text">
+                            <h4>Website Control</h4>
+                            <p class="sub-heading-txt-dec">Open/Close Website And Type The Reason</p>
+                        </div>
+                        <label >
+                            <input class="toggle-checkbox" type="checkbox" name="" id="" checked>
+                            <div class="toggle-switch">
+
+                            </div>
+                        </label>
+                        
+                    </div>
+                    <textarea name="" placeholder="Close Message Content" class="p-b-15"></textarea>
+                </div>
+                <!-- end site control -->
+                <!-- start general info -->
+                <div class="general bg-white radious flow p-15 ">
+                    <h2 class="sub-heading-dec">General Info</h2>
+                    <p class="sub-heading-txt-dec">General Information About Your Account</p>
+                    <form action="" class="p-b-20">
+                        <p>First Name</p>
+                        <input type="text" placeholder="First Name">
+                    </form>
+                    <form action="" class="p-b-20">
+                        <p>Last Name</p>
+                        <input type="text" placeholder="Last Name">
+                    </form>
+                    <form action="" class="p-b-20">
+                        <p>Email</p>
+                        <div class="input d-flex between-flex">
+                            <input type="email" placeholder="O@nn.sa">
+                            <input type="submit" value="Change">
+                        </div>
+                        
+                    </form>
+                </div>    
+                <!-- end general info -->
+                <!-- start widgets -->
+                <div class="widgets bg-white radious flow p-15 ">
+                    <h2 class="sub-heading-dec">Widgets Control</h2>
+                    <p class="sub-heading-txt-dec">Show/Hide Widgets</p>
+                    <div class="check-box p-b-15">
+                        <input type="checkbox"  id="one" checked>
+                        <label for="one">Quick Draft</label>
+                    </div>
+                    <div class="check-box p-b-15">
+                        <input type="checkbox"  id="two" checked>
+                        <label for="two">Yearly Targets</label>
+                    </div>
+                    <div class="check-box p-b-15">
+                        <input type="checkbox"  id="three" checked>
+                        <label for="three">Ticket Statistics</label>
+                    </div>
+                    <div class="check-box p-b-15">
+                        <input type="checkbox"  id="four" checked>
+                        <label for="four">Latest News</label>
+                    </div>
+                    <div class="check-box p-b-15">
+                        <input type="checkbox"  id="five">
+                        <label for="five">Latest Tasks</label>
+                    </div>
+                    <div class="check-box p-b-15">
+                        <input type="checkbox"  id="six" checked>
+                        <label for="six">Top Search Items</label>
+                    </div>
+                </div>    
+                <!-- end widgets -->
+                <!-- start backup -->
+                <div class="backup bg-white radious flow p-15 ">
+                    <h2 class="sub-heading-dec">Backup Manager</h2>
+                    <p class="sub-heading-txt-dec">Control Backup Time And Location</p>
+                    <div class="check-option">
+                        <div class="check-box p-b-15">
+                            <input type="radio"  id="seven" name="check-option" checked>
+                            <label for="seven">Daily</label>
+                        </div>
+                        <div class="check-box p-b-15">
+                            <input type="radio"  id="eight" name="check-option">
+                            <label for="eight">Weekly</label>
+                        </div>
+                        <div class="check-box p-b-15">
+                            <input type="radio"  id="nine" name="check-option">
+                            <label for="nine">Monthly</label>
+                        </div>
+                    </div>
+                    <form action="">
+                        <div class="names d-flex between-flex">
+                            <input type="radio" id="server-one" name="names">
+                                
+                                    <label for="server-one" class="d-flex between-flex dir-flex-col">
+                                        <i class="fa-solid fa-server p-b-10"></i>
+                                        <p>Megaman</p>
+                                    </label>
+                                    
+                                
+                            <input type="radio" id="server-two" name="names">
+                                
+                                    <label for="server-two" class="d-flex between-flex dir-flex-col">
+                                        <i class="fa-solid fa-server p-b-10"></i>
+                                        <p>Your Site</p>
+                                    </label>
+                                    
+                                
+                            <input type="radio" id="server-three" name="names">
+                                
+                                    <label for="server-three" class="d-flex between-flex dir-flex-col">
+                                        <i class="fa-solid fa-server p-b-10"></i>
+                                        <p>Sigma</p>
+                                    </label>
+                                    
+                                
+                        </div>
+                    </form>
+                </div>    
+                <!-- end backup -->
+            </div>  
+            <!-- end settings -->  
+         </div>
+    </div>     
+    <script src="js/all.min.js"></script>
+</body>
+</html>
